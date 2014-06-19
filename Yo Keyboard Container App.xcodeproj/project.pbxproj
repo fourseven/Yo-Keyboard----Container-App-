@@ -11,6 +11,8 @@
 		AF1936A81952CBAB0011757F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1936A71952CBAB0011757F /* AppDelegate.m */; };
 		AF1936AA1952CBAB0011757F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1936A91952CBAB0011757F /* Images.xcassets */; };
 		AF1936B61952CBAB0011757F /* Yo_Keyboard_Container_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1936B51952CBAB0011757F /* Yo_Keyboard_Container_AppTests.m */; };
+		AF1936C91952CBC00011757F /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1936C81952CBC00011757F /* KeyboardViewController.m */; };
+		AF1936CC1952CBC00011757F /* com.mathewhartley.Yo-Keyboard-Container-App.Yo-Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AF1936C31952CBC00011757F /* com.mathewhartley.Yo-Keyboard-Container-App.Yo-Keyboard.appex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +23,35 @@
 			remoteGlobalIDString = AF19369E1952CBAB0011757F;
 			remoteInfo = "Yo Keyboard Container App";
 		};
+		AF1936CA1952CBC00011757F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF1936971952CBAB0011757F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF1936C21952CBC00011757F;
+			remoteInfo = "Yo Keyboard";
+		};
+		AF1936CD1952CBC00011757F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF1936971952CBAB0011757F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF1936C21952CBC00011757F;
+			remoteInfo = "Yo Keyboard";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF1936D21952CBC00011757F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AF1936CC1952CBC00011757F /* com.mathewhartley.Yo-Keyboard-Container-App.Yo-Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AF19369F1952CBAB0011757F /* Yo Keyboard Container App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yo Keyboard Container App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +63,10 @@
 		AF1936AF1952CBAB0011757F /* Yo Keyboard Container AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yo Keyboard Container AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1936B41952CBAB0011757F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF1936B51952CBAB0011757F /* Yo_Keyboard_Container_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Yo_Keyboard_Container_AppTests.m; sourceTree = "<group>"; };
+		AF1936C31952CBC00011757F /* com.mathewhartley.Yo-Keyboard-Container-App.Yo-Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "com.mathewhartley.Yo-Keyboard-Container-App.Yo-Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF1936C61952CBC00011757F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF1936C71952CBC00011757F /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		AF1936C81952CBC00011757F /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +84,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF1936C01952CBC00011757F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,6 +99,7 @@
 			children = (
 				AF1936A11952CBAB0011757F /* Yo Keyboard Container App */,
 				AF1936B21952CBAB0011757F /* Yo Keyboard Container AppTests */,
+				AF1936C41952CBC00011757F /* Yo Keyboard */,
 				AF1936A01952CBAB0011757F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +109,7 @@
 			children = (
 				AF19369F1952CBAB0011757F /* Yo Keyboard Container App.app */,
 				AF1936AF1952CBAB0011757F /* Yo Keyboard Container AppTests.xctest */,
+				AF1936C31952CBC00011757F /* com.mathewhartley.Yo-Keyboard-Container-App.Yo-Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +151,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AF1936C41952CBC00011757F /* Yo Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AF1936C71952CBC00011757F /* KeyboardViewController.h */,
+				AF1936C81952CBC00011757F /* KeyboardViewController.m */,
+				AF1936C51952CBC00011757F /* Supporting Files */,
+			);
+			path = "Yo Keyboard";
+			sourceTree = "<group>";
+		};
+		AF1936C51952CBC00011757F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF1936C61952CBC00011757F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,10 +179,13 @@
 				AF19369B1952CBAB0011757F /* Sources */,
 				AF19369C1952CBAB0011757F /* Frameworks */,
 				AF19369D1952CBAB0011757F /* Resources */,
+				AF1936D21952CBC00011757F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AF1936CB1952CBC00011757F /* PBXTargetDependency */,
+				AF1936CE1952CBC00011757F /* PBXTargetDependency */,
 			);
 			name = "Yo Keyboard Container App";
 			productName = "Yo Keyboard Container App";
@@ -146,6 +210,23 @@
 			productReference = AF1936AF1952CBAB0011757F /* Yo Keyboard Container AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AF1936C21952CBC00011757F /* Yo Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF1936CF1952CBC00011757F /* Build configuration list for PBXNativeTarget "Yo Keyboard" */;
+			buildPhases = (
+				AF1936BF1952CBC00011757F /* Sources */,
+				AF1936C01952CBC00011757F /* Frameworks */,
+				AF1936C11952CBC00011757F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yo Keyboard";
+			productName = "Yo Keyboard";
+			productReference = AF1936C31952CBC00011757F /* com.mathewhartley.Yo-Keyboard-Container-App.Yo-Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,6 +242,9 @@
 					AF1936AE1952CBAB0011757F = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = AF19369E1952CBAB0011757F;
+					};
+					AF1936C21952CBC00011757F = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -178,6 +262,7 @@
 			targets = (
 				AF19369E1952CBAB0011757F /* Yo Keyboard Container App */,
 				AF1936AE1952CBAB0011757F /* Yo Keyboard Container AppTests */,
+				AF1936C21952CBC00011757F /* Yo Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +277,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AF1936AD1952CBAB0011757F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF1936C11952CBC00011757F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -218,6 +310,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF1936BF1952CBC00011757F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF1936C91952CBC00011757F /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -225,6 +325,16 @@
 			isa = PBXTargetDependency;
 			target = AF19369E1952CBAB0011757F /* Yo Keyboard Container App */;
 			targetProxy = AF1936B01952CBAB0011757F /* PBXContainerItemProxy */;
+		};
+		AF1936CB1952CBC00011757F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF1936C21952CBC00011757F /* Yo Keyboard */;
+			targetProxy = AF1936CA1952CBC00011757F /* PBXContainerItemProxy */;
+		};
+		AF1936CE1952CBC00011757F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF1936C21952CBC00011757F /* Yo Keyboard */;
+			targetProxy = AF1936CD1952CBC00011757F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -365,6 +475,32 @@
 			};
 			name = Release;
 		};
+		AF1936D01952CBC00011757F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Yo Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "com.mathewhartley.Yo-Keyboard-Container-App.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AF1936D11952CBC00011757F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Yo Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "com.mathewhartley.Yo-Keyboard-Container-App.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -390,6 +526,14 @@
 			buildConfigurations = (
 				AF1936BD1952CBAB0011757F /* Debug */,
 				AF1936BE1952CBAB0011757F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF1936CF1952CBC00011757F /* Build configuration list for PBXNativeTarget "Yo Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF1936D01952CBC00011757F /* Debug */,
+				AF1936D11952CBC00011757F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
