@@ -1,4 +1,4 @@
-Yo-Keyboard----Container-App-
+Yo Keyboard (+ Container App)
 =============================
 
 The Yo iOS8 keyboard.
